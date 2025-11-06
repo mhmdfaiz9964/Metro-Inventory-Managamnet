@@ -1,0 +1,22 @@
+k\\src\\Illuminate\\Foundation\\Application.php(1132): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#20 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#21 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1131): array_walk(Array, Object(Closure))
+#22 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#23 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(342): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#24 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(473): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#25 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(195): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#26 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2025-09-03 16:19:45] local.ERROR: Class "oute" not found {"exception":"[object] (Error(code: 0): Class \"oute\" not found at D:\\Inventory System\\Project\\V 1.0\\routes\\web.php:25)
+[stacktrace]
+#0 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(34): require()
+#1 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(526): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\Inventory Sy...')
+#2 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(480): Illuminate\\Routing\\Router->loadRoutes('D:\\\\Inventory Sy...')
+#3 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(206): Illuminate\\Routing\\Router->group(Array, 'D:\\\\Inventory Sy...')
+#4 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(248): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\Inventory Sy...')
+#5 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#6 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#9 D:\\Inventory System\\Project\\V 1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(836): Illuminate\\Contai

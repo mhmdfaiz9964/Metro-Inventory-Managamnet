@@ -1,0 +1,21 @@
+sPresent) { // step 8
+				result = Call(throwMethod, syncIterator, [value]); // step 8.a
+			} else { // step 9
+				result = Call(throwMethod, syncIterator); // step 9.a
+			}
+			if (Type(result) !== 'Object') { // step 11
+				Call(reject, undefined, [new $TypeError('Iterator `throw` method returned a non-object value.')]); // step 11.a
+				return;
+			}
+
+			resolve(AsyncFromSyncIteratorContinuation(result/* , promiseCapability */)); // step 12
+		});
+	}
+};
+
+// https://ecma-international.org/ecma-262/9.0/#sec-createasyncfromsynciterator
+
+module.exports = function CreateAsyncFromSyncIterator(syncIteratorRecord) {
+	assertRecord(Type, 'Iterator Record', 'syncIteratorRecord', syncIteratorRecord);
+
+	// var asyncIterator = ObjectCreate(%AsyncFromSyncIteratorPrototype%, Â

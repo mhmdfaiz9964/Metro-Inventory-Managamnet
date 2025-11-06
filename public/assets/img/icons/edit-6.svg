@@ -1,0 +1,40 @@
+mpled)
+encode: sourcemap-codec x 2,472 ops/sec ±0.21% (99 runs sampled)
+encode: source-map-0.6.1 x 2,200 ops/sec ±0.17% (99 runs sampled)
+encode: source-map-0.8.0 x 2,220 ops/sec ±0.37% (99 runs sampled)
+Fastest is encode: local code
+
+
+***
+
+
+vscode.map - 2141001 segments
+
+Decode Memory Usage:
+local code                           198955264 bytes
+@jridgewell/sourcemap-codec 1.4.15   199175352 bytes
+sourcemap-codec                      199102688 bytes
+source-map-0.6.1                     386323432 bytes
+source-map-0.8.0                     244116432 bytes
+chrome dev tools                     293734280 bytes
+Smallest memory usage is local code
+
+Decode speed:
+decode: local code x 3.90 ops/sec ±22.21% (15 runs sampled)
+decode: @jridgewell/sourcemap-codec 1.4.15 x 3.95 ops/sec ±23.53% (15 runs sampled)
+decode: sourcemap-codec x 3.82 ops/sec ±17.94% (14 runs sampled)
+decode: source-map-0.6.1 x 0.61 ops/sec ±7.81% (6 runs sampled)
+decode: source-map-0.8.0 x 9.54 ops/sec ±0.28% (28 runs sampled)
+chrome dev tools x 2.18 ops/sec ±10.58% (10 runs sampled)
+Fastest is decode: source-map-0.8.0
+
+Encode Memory Usage:
+local code                            13509880 bytes
+@jridgewell/sourcemap-codec 1.4.15    13537648 bytes
+sourcemap-codec                       32540104 bytes
+source-map-0.6.1                     127531040 bytes
+source-map-0.8.0                     127535312 bytes
+Smallest memory usage is local code
+
+Encode speed:
+encode: local code x 20.10 ops/sec 
