@@ -28905,6 +28905,7 @@ th.fixed-width {
 .btn-primary {
   background-color: #00008B;
   border-color: #00008B;
+  color: #ffffff;
 }
 .btn-primary:hover {
   background-color: #68bbe3;
@@ -28929,10 +28930,12 @@ th.fixed-width {
 .btn-secondary {
   background-color: #68bbe3;
   border-color: #68bbe3;
+  color: #ffffff;
 }
 .btn-secondary:hover {
   background-color: #00008B;
   border-color: #00008B;
+  color: #ffffff;
 }
 
 .btn-danger {
